@@ -14,5 +14,8 @@ namespace vEcom.Models
         public int BrandId { get; set; }
         public string BrandName { get; set; }
         public string BrandLogo { get; set; }
+
+        public int testing { get; set; }
+        public string dkdfkdf { get; set; }
     }
 }
