@@ -23,7 +23,7 @@ namespace vEcom.Data
             base.OnModelCreating(modelBuilder);
         }
 
-        public DbSet<Brands> vEcom_Brand {get; set;}
+        public DbSet<Brands> vEcom_Brands {get; set;}
         public DbSet<Categories> vEcom_Category { get; set; }
         public DbSet<Colors> vEcom_Color { get; set; }
         public DbSet<Product_Categories> vEcom_Product_Category { get; set; }
