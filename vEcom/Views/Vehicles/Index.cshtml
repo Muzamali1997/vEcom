@@ -1,0 +1,31 @@
+﻿@model List<Categories>
+@{
+    ViewData["Title"]="List of Vehicles";
+    }
+
+<h1>Products</h1>
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <table>
+            <thead>
+                <tr>
+                    <th>CategoryId</th>
+                    <th>CategoryName</th>
+                    <th>ProductId</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach(var item in Model){
+                <tr>
+                    <td>@Html.DisplayFor(modelItem=>item.CategoryId)</td>
+                    <td>@Html.DisplayFor(modelItem => item.CategoryName)</td>
+                    <td>@Html.DisplayFor(modelItem => item.CategoryName)</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+
+</div>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,6 +8,7 @@ namespace vEcom.Models
 {
     public class Products
     {
+        [Key]
         public int ProductId { get; set; }
         public string SKU { get; set; }
         public string PartNumber { get; set; }
@@ -21,6 +23,11 @@ namespace vEcom.Models
         public float SalePercent { get; set; }
         public float RegularPrice { get; set; }
         public string ImageUrl { get; set; }
+
+        //Relationship
+        public List<Categories> Category { get; set; }
+        public List<Colors> Color { get; set; }
+
 
     }
 }

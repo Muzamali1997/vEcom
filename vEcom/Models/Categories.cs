@@ -11,5 +11,8 @@ namespace vEcom.Models
         [Key]
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
+
+        //Relationship
+        public List<Product_Categories> Product_Category { get; set; }
     }
 }
